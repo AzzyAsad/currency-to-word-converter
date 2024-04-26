@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "3v3LuVH7fnhGOaIwgZTjBYgJ9wV/wNoTbTeVt2Y9mYk=",
+  "Source": "CurrencyToWordConverter.Server.API",
+  "BasePath": "_content/CurrencyToWordConverter.Server.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

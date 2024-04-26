@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "0JZj72YBX7OcT6qQKq+dET6E3txVh50vYjsOjptWlZ3E9pm0MnFTOy1wNSiqpqqCbEYDyJ+iLBDB8BdkO8jg/w==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\CurrencyToWordConverter\\CurrencyToWordConverter.Server\\CurrencyToWordConverter.Server.API\\CurrencyToWordConverter.Server.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AzzY\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\AzzY\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\AzzY\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\AzzY\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\AzzY\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\AzzY\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

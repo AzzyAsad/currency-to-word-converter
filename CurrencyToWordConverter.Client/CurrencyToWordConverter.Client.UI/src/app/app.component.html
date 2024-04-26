@@ -1,0 +1,36 @@
+<div class="toolbar" role="banner">
+  <img width="40"
+       alt="Angular Logo"
+       src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==" />
+  <span>Currenct To Word Converter App</span>
+</div>
+
+<div class="content" role="main">
+  <mat-error *ngIf="currencyFormControl.hasError('required') && (currencyFormControl.touched)">
+    Currency value is required.
+  </mat-error>
+
+  <mat-error *ngIf="currencyFormControl.hasError('pattern') && !currencyFormControl.hasError('required')">
+    Please enter a valid currency value.
+  </mat-error>
+
+  <mat-error *ngIf="currencyFormControl.hasError('maxlength') && !currencyFormControl.hasError('required')">
+    The length of currency is exceeding.
+  </mat-error>
+
+  <mat-form-field [style.width.px]=350>
+    <mat-label>Currency</mat-label>
+    <input matInput placeholder="value is required" [(ngModel)]="currency" [formControl]="currencyFormControl" [errorStateMatcher]="matcher">
+    <mat-hint>Enter a currency value between 0 &amp; 999 999 999,99. Point to remember here is that as per the question, we are using <strong>,(comma)</strong> here as a seperator between dollar and cents. No spaces are allowed in the number anywhere.</mat-hint>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" class="pt-3" [style.margin-top.px]=100 (click)="sendCurrencyToConvert()">Convert</button>
+
+  <div [style.margin-top.px]=50>
+    <strong>
+      {{result}}
+    </strong>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
